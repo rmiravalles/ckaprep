@@ -157,5 +157,4 @@ Now we can hit the Tab button to autocomplete the kubectl commands.
 
 ![kubectl describe](../media/kubectldescribe.png)
 
-
-
+**NEXT**: [Configuring the worker node](configure_worker.md)
