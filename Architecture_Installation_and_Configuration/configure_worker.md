@@ -81,4 +81,4 @@ Back to the cp server, we run `kubectl get nodes` to see our worker node ready t
 
 ![kubectl get nodes](../media/kubectlgetnodes.png)
 
-**NEXT**: [Deploying a simple application](deploy_app.md)
+**NEXT:** [Deploying a simple application](deploy_app.md)

@@ -12,12 +12,14 @@ I'm using the following resources to prepare for the exam:
 ### Other resources
 
 - [The CKA curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.22.pdf)
+- [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
 ## Contents
 
-## Installation and configuration
+## Cluster Architecture, Installation and configuration
 
-- [Preparing the environment](Installation_and_Configuration/environment.md)
-- [Configuring the control plane](Installation_and_Configuration/configure_cp.md)
-- [Configuring the worker node](Installation_and_Configuration/configure_worker.md)
-- [Deploying a simple application](Installation_and_Configuration/deploy_app.md)
+- [Preparing the environment](Architecture_Installation_and_Configuration/environment.md)
+- [Configuring the control plane](Architecture_Installation_and_Configuration/configure_cp.md)
+- [Configuring the worker node](Architecture_Installation_and_Configuration/configure_worker.md)
+- [Deploying a simple application](Architecture_Installation_and_Configuration/deploy_app.md)
+- [Backing up the etcd database](Architecture_Installation_and_Configuration/backup_etcd.md)
