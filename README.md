@@ -13,13 +13,22 @@ I'm using the following resources to prepare for the exam:
 
 - [The CKA curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.22.pdf)
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
+- [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
 ## Contents
 
+I'm dividing the contents in sections according to the current curriculum outline (version 1.22). In each section there are the labs I took from the Linux Foundation course, and study notes.
+
 ## Cluster Architecture, Installation and configuration
 
-- [Preparing the environment](Architecture_Installation_and_Configuration/environment.md)
-- [Configuring the control plane](Architecture_Installation_and_Configuration/configure_cp.md)
-- [Configuring the worker node](Architecture_Installation_and_Configuration/configure_worker.md)
-- [Deploying a simple application](Architecture_Installation_and_Configuration/deploy_app.md)
-- [Backing up the etcd database](Architecture_Installation_and_Configuration/backup_etcd.md)
+### Labs
+
+- [Preparing the environment](Architecture_Installation_and_Configuration/Labs/environment.md)
+- [Configuring the control plane](Architecture_Installation_and_Configuration/Labs/configure_cp.md)
+- [Configuring the worker node](Architecture_Installation_and_Configuration/Labs/configure_worker.md)
+- [Deploying a simple application](Architecture_Installation_and_Configuration/Labs/deploy_app.md)
+- [Backing up the etcd database](Architecture_Installation_and_Configuration/Labs/backup_etcd.md)
+
+### Notes
+
+- [Kubernetes components](Architecture_Installation_and_Configuration/Notes/Kubernetes_components.md)
