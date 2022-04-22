@@ -17,7 +17,7 @@ I'm using the following resources to prepare for the exam:
 
 ## Contents
 
-I'm dividing the contents in sections according to the current curriculum outline (version 1.22). In each section there are the labs I took from the Linux Foundation course, and study notes.
+I'm dividing the contents in sections according to the current curriculum outline (version 1.22). In each section there are the labs I took from the Linux Foundation course, and  study notes.
 
 ## Cluster Architecture, Installation and configuration
 
