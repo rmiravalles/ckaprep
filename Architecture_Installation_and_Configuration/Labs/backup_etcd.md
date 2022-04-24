@@ -70,3 +70,5 @@ Now we can perform a back up of the snapshot and other information used to confi
 It's highly recommended to do this on a regular basis.
 
 I still need to study how to restore the database from the snapshot. I'll update this section soon.
+
+**NEXT:** [Upgrading the cluster](upgrade_cluster.md)

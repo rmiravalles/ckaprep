@@ -12,6 +12,8 @@ I'm using the following resources to prepare for the exam:
 ### Other resources
 
 - [The CKA curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.22.pdf)
+- [Candidate Handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
+- [Important Instructions](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 - [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
@@ -28,6 +30,7 @@ I'm dividing the contents in sections according to the current curriculum outlin
 - [Configuring the worker node](Architecture_Installation_and_Configuration/Labs/configure_worker.md)
 - [Deploying a simple application](Architecture_Installation_and_Configuration/Labs/deploy_app.md)
 - [Backing up the etcd database](Architecture_Installation_and_Configuration/Labs/backup_etcd.md)
+- [Upgrading the cluster](Architecture_Installation_and_Configuration/Labs/upgrade_cluster.md)
 
 ### Notes
 
