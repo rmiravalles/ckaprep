@@ -122,4 +122,4 @@ Let's delete the deployment, the endpoints and the service.
 `kubectl delete ep nginx`
 `kubectl delete svc nginx`
 
-**NEXT:** 
+**NEXT:** [Backing up the etcd database](backup_etcd.md)
