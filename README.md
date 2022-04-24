@@ -35,3 +35,4 @@ I'm dividing the contents in sections according to the current curriculum outlin
 ### Notes
 
 - [Kubernetes components](Architecture_Installation_and_Configuration/Notes/Kubernetes_components.md)
+- [YAML in Kubernetes](Architecture_Installation_and_Configuration/Notes/YAML_Kubernetes.md)
