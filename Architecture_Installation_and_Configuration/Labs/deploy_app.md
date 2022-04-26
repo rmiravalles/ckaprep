@@ -16,11 +16,11 @@ And to see the details about this specific deployment, we run the following:
 
 `kubectl describe deployment nginx`
 
-![kubectl describe deployment](../media/kubectldescribedeploymentnginx.png)
+![kubectl describe deployment](../../media/kubectldescribedeploymentnginx.png)
 
 We can see the steps the cluster took to pull and deploy the nginx app by running `kubectl get events`
 
-![kubectl get events](../media/getevents.png)
+![kubectl get events](../../media/getevents.png)
 
 ## Deploying an app from a manifest file
 
@@ -59,9 +59,9 @@ Since we have just one pod running our application now, we'll see just one IP ad
 
 Let's move to our worker node and run a `curl` to see our web server running. We can use either the ClusterIP or the endpoint IP.
 
-![curl](../media/curlnginxep.png)
+![curl](../../media/curlnginxep.png)
 
-Now we'll scale up our deployment, from one to three pods. There's a way to do it via the command-line, with `kubectl scale deployment`, but it's not best practice. All changes in deployments should be done via manifest files. We'll do it like that, by updating our [first.yaml](../yaml_files/first.yaml) file. On line 13, where it says `replicas`, we'll write the number 3. We then run the following:
+Now we'll scale up our deployment, from one to three pods. There's a way to do it via the command-line, with `kubectl scale deployment`, but it's not best practice. All changes in deployments should be done via manifest files. We'll do it like that, by updating our [first.yaml](../../yaml_files/first.yaml) file. On line 13, where it says `replicas`, we'll write the number 3. We then run the following:
 
 `kubectl replace -f first.yaml`
 
@@ -77,7 +77,7 @@ Let's get the list of pods:
 
 `kubectl get pod`
 
-![kubectl get pod](media/../../media/kubectlgetpod.png)
+![kubectl get pod](../../media/kubectlgetpod.png)
 
 We can choose any of these pods for our next task. I chose the second one, the one that ends in *b6bb*.
 
@@ -85,7 +85,7 @@ We then run `kubectl exec` to run `printenv` inside the pod. Like so:
 
 `kubectl exec nginx-7848d4b86f-kb6bb -- printenv | grep KUBERNETES`
 
-![kubectl exec](../media/kubectlexec.png)
+![kubectl exec](../../media/kubectlexec.png)
 
 We'll redeploy the nginx Service. We'll need to delete the existing Service first.
 
@@ -98,11 +98,11 @@ The cluster should now be accessible to the outside world.
 
 We'll run `kubectl get svc` again and take note of the port made available for the nginx Service. It's the big number after the colon. In my case it was 30488.
 
-![kubectl get svc](../media/kubectlgetsvc.png)
+![kubectl get svc](../../media/kubectlgetsvc.png)
 
 In the browser, we'll navigate to the worker node's public IP address with the port. We should see the Nginx welcome page.
 
-![Nginx](../media/nginxrunning.png)
+![Nginx](../../media/nginxrunning.png)
 
 ## Testing the scalability
 

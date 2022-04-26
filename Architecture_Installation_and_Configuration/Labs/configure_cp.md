@@ -77,7 +77,7 @@ We'll copy this value and add to the `/etc/hosts` file. I named the alias **k8sc
 
 Your file should look like this:
 
-![etc/hosts file](../media/etchosts.png)
+![etc/hosts file](../../media/etchosts.png)
 
 ## Create a configuration file for the cluster
 
@@ -129,7 +129,7 @@ The command after the pipe saves the output of the command.
 
 You should see this:
 
-![kubeadm init](../media/control%20plane%20started.png)
+![kubeadm init](../../media/control%20plane%20started.png)
 
 We now go back to being a regular user to run the following commands, as indicated in the output of `kubeadm init`. To quit being root, simply type `exit`.
 
@@ -155,6 +155,6 @@ Exit the session and log back in.
 
 Now we can hit the Tab button to autocomplete the kubectl commands.
 
-![kubectl describe](../media/kubectldescribe.png)
+![kubectl describe](../../media/kubectldescribe.png)
 
 **NEXT**: [Configuring the worker node](configure_worker.md)

@@ -8,6 +8,7 @@ I'm using the following resources to prepare for the exam:
 
 - [The Kubernetes Book](https://github.com/nigelpoulton/TheK8sBook) by [Nigel Poulton](https://nigelpoulton.com/)
 - [Kubernetes Fundamentals](https://training.linuxfoundation.org/training/kubernetes-fundamentals/) course from the Linux Foundation
+- [KodeKloud CKA course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
 
 ### Other resources
 
@@ -16,6 +17,7 @@ I'm using the following resources to prepare for the exam:
 - [Important Instructions](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 - [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
+- [David Holder's CKA Study Guide](https://github.com/David-VTUK/CKA-StudyGuide)
 
 ## Contents
 

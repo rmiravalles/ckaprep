@@ -75,10 +75,10 @@ Back to the worker node, we'll now join it to the cluster. For that we'll run th
 
 This is what you should see as the output.
 
-![kubeadm join](../media/nodejoined.png)
+![kubeadm join](../../media/nodejoined.png)
 
 Back to the cp server, we run `kubectl get nodes` to see our worker node ready to start working as a member of the cluster.
 
-![kubectl get nodes](../media/kubectlgetnodes.png)
+![kubectl get nodes](../../media/kubectlgetnodes.png)
 
 **NEXT:** [Deploying a simple application](deploy_app.md)
