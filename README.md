@@ -13,6 +13,7 @@ I'm using the following resources to prepare for the exam:
 - [The Kubernetes Book](https://github.com/nigelpoulton/TheK8sBook) by [Nigel Poulton](https://nigelpoulton.com/)
 - [Killer Coda CKA scenarios](https://killercoda.com/cka)
 - [KodeKloud CKA course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
+- [KodeKloud GitHub repository](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
 - [Certified Kubernetes Administrator - Real World](https://www.udemy.com/course/certified-kubernetes-administrator-cka-real-world/)
 
 ### Other resources
