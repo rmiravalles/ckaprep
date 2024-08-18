@@ -1,15 +1,15 @@
 # Run these commands in all Nodes (Control Plane and Worker Nodes)
 
 # Make sure swap is disabled
-sudo swapp -a # This command should give no output
+sudo swapoff -a # This command should give no output
 
 # Set the hosts file
 vim /etc/hosts
 
 # Add these lines to the hosts file
-(cp1 private IP address) cp1
-(worker1 private IP address) worker1
-(worker2 private ip address) worker2
+10.10.0.4 cp1
+10.10.0.5 worker1
+10.10.0.6 worker2
 
 # containerd prerequisites
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
@@ -20,7 +20,7 @@ EOF
 sudo modprobe overlay
 sudo modprobe br_netfiler
 
-# Required ysctl parameters
+# Required sysctl parameters
 # These parameters will persist across reboots
 cat << EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-iptables = 2
@@ -62,7 +62,7 @@ apt-cache policy kubelet | head -n 20
 #Install the required packages, if needed we can request a specific version. 
 #Use this version because in a later course we will upgrade the cluster to a newer version.
 #Try to pick one version back because later in this series, we'll run an upgrade
-VERSION=1.29.1-1.1
+VERSION=1.29.7-1.1
 sudo apt install -y kubelet=$VERSION kubeadm=$VERSION kubectl=$VERSION
 sudo apt-mark hold kubelet kubeadm kubectl containerd
 
