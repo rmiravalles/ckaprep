@@ -42,5 +42,3 @@ Metadata is data about the object, such as its name and whatever labels that mig
 ## spec
 
 Here we specify the information Kubernetes will use to deploy the object. Depending on the object, different specs will go in here.
-
-
