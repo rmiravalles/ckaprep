@@ -4,7 +4,7 @@
 sudo swapoff -a # This command should give no output
 
 # Set the hosts file
-vim /etc/hosts
+sudo vim /etc/hosts
 
 # Add these lines to the hosts file
 10.10.0.4 cp1
