@@ -7,3 +7,7 @@
 ## Resources
 
 [Installing Kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
+
+## The process
+
+[Preparing the nodes](/other_files/Kubeadm_prerequisites.sh)

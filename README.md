@@ -11,6 +11,8 @@ I plan to sit for the exam some time around the end of October.
 I'm using the following resources to prepare for the exam:
 
 - [The Kubernetes Book](https://github.com/nigelpoulton/TheK8sBook) by [Nigel Poulton](https://nigelpoulton.com/)
+- [Acing the Certified Kubernetes Administrator Exam](https://www.manning.com/books/acing-the-certified-kubernetes-administrator-exam)
+- [Acing the CKA Exam GitHub repository](https://github.com/chadmcrowell/acing-the-cka-exam)
 - [Killer Coda CKA scenarios](https://killercoda.com/cka)
 - [KodeKloud CKA course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
 - [KodeKloud GitHub repository](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
@@ -26,7 +28,7 @@ I'm using the following resources to prepare for the exam:
 
 ## Contents
 
-I'm dividing the contents in sections according to the current curriculum outline (version 1.3). In each section there are the labs I took from the Linux Foundation course, and  study notes.
+I'm dividing the contents in sections according to the current curriculum outline (version 1.3). In each section there are the labs I took from the different courses, and some study notes.
 
 ## Cluster Architecture, Installation and configuration
 
@@ -41,5 +43,9 @@ I'm dividing the contents in sections according to the current curriculum outlin
 
 ### Notes
 
-- [Kubernetes components](Architecture_Installation_and_Configuration/Notes/Kubernetes_components.md)
+- [Introduction to Kubernetes](Architecture_Installation_and_Configuration/Notes/What_is_Kubernetes.md)
+- [The Control plane](/Architecture_Installation_and_Configuration/Notes/The_control_plane.md)
+- [The Worker node](/Architecture_Installation_and_Configuration/Notes/The_worker_node.md)
+- [Deploying the underlying infrastructure in Azure](/Architecture_Installation_and_Configuration/Notes/Infrastructure.md)
+- [Using Kubeadm to install a basic cluster](/Architecture_Installation_and_Configuration/Notes/Kubeadm.md)
 - [YAML in Kubernetes](Architecture_Installation_and_Configuration/Notes/YAML_Kubernetes.md)
