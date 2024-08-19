@@ -18,7 +18,7 @@ br_netfilter
 EOF
 
 sudo modprobe overlay
-sudo modprobe br_netfiler
+sudo modprobe br_netfilter
 
 # Required sysctl parameters
 # These parameters will persist across reboots
@@ -59,11 +59,12 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo apt update
 apt-cache policy kubelet | head -n 20
 
-#Install the required packages, if needed we can request a specific version. 
-#Use this version because in a later course we will upgrade the cluster to a newer version.
-#Try to pick one version back because later in this series, we'll run an upgrade
+#Install the required packages, with an older version. 
+#Use this version because later we will upgrade the cluster to a newer version.
 VERSION=1.29.7-1.1
 sudo apt install -y kubelet=$VERSION kubeadm=$VERSION kubectl=$VERSION
+
+#This is to hold the chosen versions in place, and not upgrade them automatically when we run an apt upgrade
 sudo apt-mark hold kubelet kubeadm kubectl containerd
 
 #To install the latest version, omit the version parameters.

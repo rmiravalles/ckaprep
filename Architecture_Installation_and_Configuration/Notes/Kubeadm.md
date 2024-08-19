@@ -10,4 +10,6 @@
 
 ## The process
 
+I'll install **kubeadm**, **kubelet**, **kubectl**, and **containerd** in the Azure VMs I created earlier.
+
 [Preparing the nodes](/other_files/Kubeadm_prerequisites.sh)
