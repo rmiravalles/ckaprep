@@ -1,7 +1,7 @@
 # The worker node
 
-- Kubernetes runs your workload by placing containers into Pods to run on **nodes**.
-- A node may be a virtual or physical machine.
+- Kubernetes runs your workloads by placing containers into Pods to run on **nodes**.
+- A node may be a virtual or a physical machine.
 
 ## Node components
 
