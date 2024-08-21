@@ -20,7 +20,7 @@ EOF
 sudo modprobe overlay
 sudo modprobe br_netfilter
 
-# Required sysctl parameters
+# Required sysctl parameters to manually enable IPv4 packet forwarding
 # These parameters will persist across reboots
 cat << EOF | sudo tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-iptables = 2
@@ -28,7 +28,7 @@ net.bridge.bridge-nf-call-ip6tables = 1
 net.ipv4.ip_forward = 1
 EOF
 
-# To apply the sysctl parameters withou rebooting
+# To apply the sysctl parameters without rebooting
 sudo sysctl --system
 
 # Install containerd
@@ -48,7 +48,7 @@ grep 'SystemdCgroup = true/' /etc/containerd/config.toml
 sudo systemctl restart containerd
 
 #Install kubeadm, kubelet and kubectl
-#Add k8s.io's apt repository gpg key, this will likely change for each version of kubernetes release. 
+#Install the packages needed to use the Kubernetes apt repository and add k8s.io's apt package index
 sudo apt-get install -y apt-transport-https ca-certificates curl gpg
 sudo curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 
@@ -64,12 +64,8 @@ apt-cache policy kubelet | head -n 20
 VERSION=1.29.7-1.1
 sudo apt install -y kubelet=$VERSION kubeadm=$VERSION kubectl=$VERSION
 
-#This is to hold the chosen versions in place, and not upgrade them automatically when we run an apt upgrade
+#This is to hold the chosen versions in place, to exclude any system upgrades
 sudo apt-mark hold kubelet kubeadm kubectl containerd
-
-#To install the latest version, omit the version parameters.
-#sudo apt-get install kubelet kubeadm kubectl
-#sudo apt-mark hold kubelet kubeadm kubectl containerd
 
 #Check the status of the kubelet and containerd.
 #The kubelet will be in inactive (dead) state until a cluster is created or the node is joined to an existing cluster.
