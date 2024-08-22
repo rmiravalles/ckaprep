@@ -1,12 +1,12 @@
 # YAML in Kubernetes
 
-Kubernetes uses **YAML files** as inputs for the creation of objects, such as Pods (remember that Pods are always written with a **capital P**), replicas, deployments, services, etc.
+Kubernetes uses **YAML files** as inputs for the creation of objects, such as Pods, replicas, deployments, services, etc.
 
 These files, called **manifest files**, follow a similar structure, and must contain four fields: `apiVersion`, `kind`, `metadata`, and `spec`.
 
 ```yml
 apiVersion: v1  # these are string values
-kind: Pod  # these are string values
+kind: Pod  # these are string values too
 metadata:  # this is a dictionary with key-value pairs
   name: myapp  # these fields are indented so they are nested under metadata
   labels:  # this is a dictionary too

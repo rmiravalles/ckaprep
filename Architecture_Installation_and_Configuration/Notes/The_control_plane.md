@@ -5,6 +5,12 @@
 
 ## Control plane components
 
+The Control Plane components all run as Pods in the `kube-system` namespace.
+
+To view these Pods, we can run the following command:
+
+`kubectl get pods -n kube-system`
+
 - **kube-apiserver**: the kube-apiserver exposes the Kubernetes API, it's the front end for the Kubernetes control plane, so all communication to the cluster passess through it.
 - **etcd**: consistent and highly-available key value store used as Kubernetes' backing store for all cluster data (the *state* of Kubernetes).
 - **kube-scheduler**: watches for newly created Pods with no assigned node, and selects a node for them to run on, taking into account factors such as resource requirements, constraints, and data locality.
