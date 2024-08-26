@@ -16,13 +16,13 @@ sudo ETCDCTL_API=3 etcdutl snapshot save etcd-backup \
 # Check the status of the backup file
 ETCDCTL_API=3 etcdctl snapshot status etcd-backup --write-out=table
 
-# To restore etcd from the backup, we can first simulate a crah by deleting
-# the kube-proxy DaemonSet
+# To restore etcd from the backup, we can first simulate a crash by deleting the kube-proxy DaemonSet
 kubectl delete ds kube-proxy -n kube-system
 
 # Perform the restore from the backup file
 ETCDCTL_API=3 etcdctl snapshot restore etcd-backup --data-dir /var/lib/etcd-restore
 
 # Edit the etcd.yaml located in the /etc/kubernetes/manifests directory
+# Under volumes, and hostPath, replace the path with the one defined in the command above
 
 
