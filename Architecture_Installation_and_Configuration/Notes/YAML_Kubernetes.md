@@ -37,7 +37,7 @@ For more on this, consult the [Kubernetes API documentation](https://kubernetes.
 
 ## metadata
 
-Metadata is data about the object, such as its name and whatever labels that might be used to describe the object.
+Metadata is data about the object, such as its name and whatever labels that might be used to describe the object. The data entered here is in the form of a dictionary.
 
 ## spec
 
