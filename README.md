@@ -34,20 +34,11 @@ I'm dividing the contents in sections according to the current curriculum outlin
 
 ## Cluster Architecture, Installation and configuration
 
-### Labs
-
-- [Preparing the environment](Architecture_Installation_and_Configuration/Labs/environment.md)
-- [Configuring the control plane](Architecture_Installation_and_Configuration/Labs/configure_cp.md)
-- [Configuring the worker node](Architecture_Installation_and_Configuration/Labs/configure_worker.md)
-- [Deploying a simple application](Architecture_Installation_and_Configuration/Labs/deploy_app.md)
-- [Backing up the etcd database](Architecture_Installation_and_Configuration/Labs/backup_etcd.md)
-- [Upgrading the cluster](Architecture_Installation_and_Configuration/Labs/upgrade_cluster.md)
-
 ### Notes
 
 - [Introduction to Kubernetes](Architecture_Installation_and_Configuration/Notes/What_is_Kubernetes.md)
 - [The Control plane](/Architecture_Installation_and_Configuration/Notes/The_control_plane.md)
 - [The Worker node](/Architecture_Installation_and_Configuration/Notes/The_worker_node.md)
-- [Deploying the underlying infrastructure in Azure](/Architecture_Installation_and_Configuration/Notes/Infrastructure.md)
+- [Deploying the underlying infrastructure in Azure](/Architecture_Installation_and_Configuration/Notes/environment.md)
 - [Using Kubeadm to install a basic cluster](/Architecture_Installation_and_Configuration/Notes/Kubeadm.md)
 - [YAML in Kubernetes](Architecture_Installation_and_Configuration/Notes/YAML_Kubernetes.md)
