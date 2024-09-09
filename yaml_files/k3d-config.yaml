@@ -1,0 +1,11 @@
+# k3d configuration file
+apiVersion: k3d.io/v1alpha3
+kind: Simple
+name: the-cluster
+image: rancher/k3s:v1.20.4-k3s1
+servers: 1 # control plane nodes
+agents: 2 # worker nodes
+ports:
+- port: 80:80
+  nodeFilters:
+  - loadbalancer

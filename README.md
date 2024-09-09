@@ -1,10 +1,12 @@
 # CKA Exam Study Notes
 
-I've had this repository for 2 years now. I sat for the exam and failed. I gave up my pursuit to take the CKA certification, but now I'm back.
+Hello!
+
+This is a repository to share my CKA learning journey.
 
 Here I'll share my study notes, the resources used, and the labs taken.
 
-I plan to sit for the exam some time around the end of October.
+I plan to sit for the exam some time around the end of November.
 
 ## Resources
 
