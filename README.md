@@ -13,7 +13,7 @@ I plan to sit for the exam some time around the end of November.
 I'm using the following resources to prepare for the exam:
 
 - [The Kubernetes Book](https://github.com/nigelpoulton/TheK8sBook) by [Nigel Poulton](https://nigelpoulton.com/)
-- [Acing the Certified Kubernetes Administrator Exam](https://www.manning.com/books/acing-the-certified-kubernetes-administrator-exam)
+- [Acing the Certified Kubernetes Administrator Exam second edition](https://www.manning.com/books/acing-the-certified-kubernetes-administrator-exam-second-edition)
 - [Acing the CKA Exam GitHub repository](https://github.com/chadmcrowell/acing-the-cka-exam)
 - [Killer Coda CKA scenarios](https://killercoda.com/cka)
 - [KodeKloud CKA course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)
@@ -23,14 +23,14 @@ I'm using the following resources to prepare for the exam:
 ### Other resources
 
 - [CKA exam page](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/)
-- [The CKA curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.30.pdf)
+- [The CKA curriculum](https://github.com/cncf/curriculum/blob/master/CKA_Curriculum_v1.35.pdf)
 - [Candidate Handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2)
 - [Exam tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 
 ## Contents
 
-I'm dividing the contents in sections according to the current curriculum outline (version 1.3). In each section there are the labs I took from the different courses, and some study notes.
+I'm dividing the contents in sections according to the current curriculum outline (version 1.35). In each section there are the labs I took from the different courses, and some study notes.
 
 ## Cluster Architecture, Installation and configuration
 
@@ -42,3 +42,29 @@ I'm dividing the contents in sections according to the current curriculum outlin
 - [Deploying the underlying infrastructure in Azure](/Architecture_Installation_and_Configuration/Notes/environment.md)
 - [Using Kubeadm to install a basic cluster](/Architecture_Installation_and_Configuration/Notes/Kubeadm.md)
 - [YAML in Kubernetes](Architecture_Installation_and_Configuration/Notes/YAML_Kubernetes.md)
+
+### Labs
+
+## Servicing and Networking
+
+### Notes
+
+### Labs
+
+## Storage
+
+### Notes
+
+### Labs
+
+## Workloads and Scheduling
+
+### Notes
+
+### Labs
+
+## Troubleshooting
+
+### Notes
+
+### Labs

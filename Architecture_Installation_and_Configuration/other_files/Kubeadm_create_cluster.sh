@@ -1,6 +1,6 @@
 # These commands should be run in the Control Plane node
 
-# Downloaad the yaml file for the pod network add-on
+# Download the yaml file for the pod network add-on
 # Here I'm going to use Calico
 wget https://raw.githubusercontent.com/projectcalico/calico/master/manifests/calico.yaml
 
@@ -8,7 +8,7 @@ wget https://raw.githubusercontent.com/projectcalico/calico/master/manifests/cal
 # Make sure you're using the same version as kubeadm, kubectl, and kubelet
 sudo kubeadm init --kubernetes-version v1.29.7
 
-# Configure the accout on the Control Plane to have admin access to the API Server
+# Configure the account on the Control Plane to have admin access to the API Server
 # from a non-privileged account
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config

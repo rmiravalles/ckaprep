@@ -17,6 +17,8 @@ sudo kubeadm upgrade node
 kubectl drain worker1 --ignore-daemonsets
 
 # Update the kubelet and kubectl
+# Note that kubelet and kubectl are not managed by kubeadm, so we need to update them separately
+# This is done in the Worker node
 sudo apt-mark unhold kubelet kubectl
 sudo apt update
 sudo apt install -y kubelet=$VERSION kubectl=$VERSION

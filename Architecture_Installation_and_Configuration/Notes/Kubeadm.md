@@ -16,4 +16,4 @@ I'll install all the necessary components (**kubeadm**, **kubelet**, **kubectl**
 
 ## Notes
 
-- Kubeadm does not install or manage kubelet or kubectl, so we need to ensure they match the version of the Kubernetes control plane you want kubeadm to install. If we don't do this, there is a risk of a version skew occurring that can lead to unexpected, buggy behaviour.
+- Kubeadm does not install or manage `kubelet` or `kubectl`, so we need to ensure they match the version of the Kubernetes control plane you want kubeadm to install. If we don't do this, there is a risk of a version skew occurring that can lead to unexpected, buggy behaviour.
