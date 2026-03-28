@@ -1,0 +1,64 @@
+site_name: CKA Exam Study Notes
+site_description: Study notes, labs, and resources for the Certified Kubernetes Administrator exam
+site_author: rmiravalles
+repo_url: https://github.com/rmiravalles/ckaprep
+repo_name: rmiravalles/ckaprep
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Cluster Architecture, Installation & Configuration:
+      - Notes:
+          - Introduction to Kubernetes: Architecture_Installation_and_Configuration/Notes/What_is_Kubernetes.md
+          - The Control Plane: Architecture_Installation_and_Configuration/Notes/The_control_plane.md
+          - The Worker Node: Architecture_Installation_and_Configuration/Notes/The_worker_node.md
+          - Environment Setup (Azure): Architecture_Installation_and_Configuration/Notes/environment.md
+          - Cluster Setup with Kubeadm: Architecture_Installation_and_Configuration/Notes/Kubeadm.md
+          - YAML in Kubernetes: Architecture_Installation_and_Configuration/Notes/YAML_Kubernetes.md
+
